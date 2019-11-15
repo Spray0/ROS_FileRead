@@ -1,0 +1,3 @@
+<launch>
+  <rosparam file="/home/parallels/mymap/mymap.yaml" command="load" ns="sp"/>
+</launch>
