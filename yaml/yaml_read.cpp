@@ -11,7 +11,7 @@
 template <typename T>
 T ReadParam(ros::NodeHandle n, std::string name){
     T ans;
-    if (ros::param::get(name, ans))ROS_INFO_STREAM("Loaded Param	" << name << ": " << ans);
+    if (n.getParam(name, ans))ROS_INFO_STREAM("Loaded Param	" << name << ": " << ans);
     else{
         ROS_ERROR_STREAM("Failed to load	" << name);	n.shutdown();
     }
