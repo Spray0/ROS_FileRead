@@ -6,4 +6,4 @@ ROS MAP文件类型读取,ROS环境。
 ### Support:
 ![pgmp5](https://img.shields.io/badge/File-PGM__P5-lightgrey) 读取ros_server保存的pgm MAP文件，格式为P5类型。
 
-![pgmp5](https://img.shields.io/badge/File-yaml-ff69b4) 使用launch文件加载yaml文件，通过ros::param::get获取参数。
+![pgmp5](https://img.shields.io/badge/File-yaml-ff69b4) 使用launch文件加载yaml文件，通过n.getParam获取参数。
