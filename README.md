@@ -17,15 +17,15 @@ yaml文件通过launch加载，随后读取路径path，打开地图文件。
 
 ### yaml说明:
 
-**image:**指定包含occupancy data的image文件路径; 可以是绝对路径，也可以是相对于YAML文件的对象路径 。
+image:指定包含occupancy data的image文件路径; 可以是绝对路径，也可以是相对于YAML文件的对象路径 。
 
-**resolution:**地图分辨率，单位是meters/pixel 。
+resolution:地图分辨率，单位是meters/pixel 。
 
-**origin:**图中左下角像素的二维位姿，如（x，y，yaw），yaw逆时针旋转(yaw=0表示没有旋转)。
+origin:图中左下角像素的二维位姿，如（x，y，yaw），yaw逆时针旋转(yaw=0表示没有旋转)。
 
-**negate:**无论白色或黑色，占用或自由，语义应该是颠倒的（阈值的解释不受影响）。
+negate:无论白色或黑色，占用或自由，语义应该是颠倒的（阈值的解释不受影响）。
 
-**occupied_thresh:**像素占用率大于这个阈值则认为完全占用。
+occupied_thresh:像素占用率大于这个阈值则认为完全占用。
 
-**free_thresh:**像素占用率比该阈值小被则认为完全自由。
+free_thresh:像素占用率比该阈值小被则认为完全自由。
 
